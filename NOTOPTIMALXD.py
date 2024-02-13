@@ -44,9 +44,10 @@ if start_bot:
     print(words.text)
 
     type_in_word.send_keys(words.text, Keys.SPACE)
-
+    
     for num in range(80):
         time.sleep(0.18)
+        # ^ CHANGE HOW QUICKLY IT WRITES THE WORDS ^
         word_that_should_be_sent = driver.find_element(By.XPATH,
                                                        f'//*[@id="game"]/div[3]/div[2]/div[1]/div/span[{number}]').text
         print(word_that_should_be_sent)
