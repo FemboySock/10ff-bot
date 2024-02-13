@@ -29,7 +29,7 @@ count_down = "10"
 while count_down != ["1"]:
     count_down = driver.find_element(By.XPATH, '//*[@id="game"]/div[2]/div').text.split()
     print(count_down)
-    time.sleep(1)
+    time.sleep(0.5)
 
 start_bot = True
 
